@@ -39,17 +39,17 @@ for(var n=1;n<=size;)
 {	
 		var x=" *";
 		var h = size/2;
-														for(var p=1; p<=h; p++)
-														{
-															console.log(" *");
-																x= x + " *" ;
-														}
+			for(var p=1; p<=h; p++)
+			{
+				console.log(" *");
+					x= x + " *" ;
+			}
 				var x="* ";
-														for(var p=1; p<=h; p++)
-														{
-															console.log("* ");
-																x= x + "* " ;
-														}
+			for(var p=1; p<=h; p++)
+			{
+				console.log("* ");
+					x= x + "* " ;
+			}
 		n++;
 }
 
