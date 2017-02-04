@@ -6,7 +6,7 @@ function mathminimum(x,y) {
 		if(x<y) return x;
 		else return y;
 }
-console.log(mathminimum(5,6365635876397856566));
+console.log(mathminimum(5,6365635856566));
 
 
 
