@@ -9,9 +9,9 @@ return series ;
 
 function sum(series){
 		var s=0;
-  		 for(var i=0; i<=series.length ; i++)
+  		 for(var i=0; i<series.length ; i++)
          {
-			s= s + series.pop();
+			s= s + series[i];
 			}
   return s;
 }
