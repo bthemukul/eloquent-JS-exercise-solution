@@ -85,3 +85,12 @@ function arrayToList(array){
 		list = {value: array[i], rest: list};
 	return list;
 }
+
+function listToArray(list){
+		var array = [];
+		for(var i=list; i; i=i.rest)
+        {array.push(i.value);}
+
+return array;
+  
+}
