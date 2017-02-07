@@ -74,3 +74,14 @@ var arrayValue = [1, 2, 3, 4, 5];
 reverseArrayInPlace(arrayValue);
 console.log(arrayValue);
 // → [5, 4, 3, 2, 1]
+
+
+// Problem - 3 
+// A List
+
+function arrayToList(array){
+  var list = null;
+	for(var i=array.length-1; i>=0 ;i--)
+		list = {value: array[i], rest: list};
+	return list;
+}
