@@ -94,3 +94,8 @@ function listToArray(list){
 return array;
   
 }
+
+
+function prepend(element, list){
+		return {value: element, rest : list};
+}
