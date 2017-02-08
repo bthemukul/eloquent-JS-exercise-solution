@@ -118,3 +118,26 @@ console.log(prepend(10, prepend(20, null)));
 // → {value: 10, rest: {value: 20, rest: null}}
 console.log(nth(arrayToList([10, 20, 30]), 1));
 // → 20
+
+
+//Problem - 4 
+/* Deep Comparison */
+
+function deepEqual(x,y){
+	if(x===y) return true;
+  
+  	if ( typeof x != "object" || x== null || typeof y != "object" || y == null ) 
+    return false;
+  
+  var keyinx=0 , keyiny = 0 ;
+  
+  for (key in x) keyinx+=1;
+  
+  for (key in y){ keyiny+=1;
+               
+               if( ( !key in x) || (!deepEqual(x[key], y[key])))
+                 return false ;
+                }
+  return keyinx==keyiny ;
+  
+}
