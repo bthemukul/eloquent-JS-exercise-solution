@@ -36,6 +36,12 @@ function readLine() {
 
 /////////////// ignore above this line ////////////////////
 
+   process.stdin.resume();
+    process.stdin.setEncoding("ascii");
+_input = "";
+process.stdin.on("data",function (input) {_input += input ;} );
+process.stdin.on("end",function(){main(_input)});
+
 function main(input) {
     var n = parseInt(readLine());
     
@@ -51,9 +57,4 @@ function main(input) {
   console.log(output);
 }
 }
-    
-   process.stdin.resume();
-    process.stdin.setEncoding("ascii");
-_input = "";
-process.stdin.on("data",function (input) {_input += input ;} );
-process.stdin.on("end",function(){main(_input)});
+
