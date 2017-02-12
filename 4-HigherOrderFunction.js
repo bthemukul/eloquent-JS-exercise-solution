@@ -34,27 +34,3 @@ function readLine() {
     return input_stdin_array[input_currentline++];
 }
 
-/////////////// ignore above this line ////////////////////
-
-   process.stdin.resume();
-    process.stdin.setEncoding("ascii");
-_input = "";
-process.stdin.on("data",function (input) {_input += input ;} );
-process.stdin.on("end",function(){main(_input)});
-
-function main(input) {
-    var n = parseInt(readLine());
-    
-    for(i = 0; i < n; i++){
-  var output = "";
-  for(j = n; j > 0; j--){
-	if(i < j - 1){
-	output+=" ";
-	}else{
-	output+="#";
-	}
-  }
-  console.log(output);
-}
-}
-
